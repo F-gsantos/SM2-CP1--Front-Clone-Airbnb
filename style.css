@@ -1,3 +1,129 @@
+header {
+    border-bottom: 0.0625rem solid #dddddd;
+}
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    max-width: 80rem;
+    margin: 1.1875rem auto;
+}
+
+.logo {
+    width: 18%;
+}
+
+.container-search {
+    width: 47%;
+}
+
+.search {
+    width: 90%;
+    max-width: 29.375rem;
+    margin: 0 auto;
+    padding: 0.3125rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    border: 0.0625rem solid #dddddd;
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.08), 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+    border-radius: 1.25rem;
+}
+
+.search1 {
+    width: 33%;
+}
+
+.search2 {
+    width: 34%;
+    border-right: 0.0938rem solid #dddddd;
+    border-left: 0.0938rem solid #dddddd;
+}
+
+.search3 {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.625rem;
+}
+
+.search button {
+    background-color: transparent;
+    border: none;
+}
+
+.search button span {
+    padding: 0 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+}
+
+.search3 button span {
+    color: #6a6a6a;
+}
+
+.btn-search {
+    background-color: #ff385c !important;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-search img {
+    height: 0.75rem;
+    width: 0.75rem;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 35%;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.9375rem;
+}
+
+.btn-announce {
+    padding: 0.75rem;
+    border: none;
+    background-color: white;
+    border-radius: 1.5625rem;
+}
+
+.btn-announce:hover {
+    background-color: #ededed;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    
+    padding: 0.4375rem 0.5rem;
+    padding-left: 0.625rem;
+    
+    background-color: white;
+    border: 0.0625rem solid #dddddd;
+    border-radius: 1.25rem;
+
+    transition: .3s;
+}
+
 * {
     margin: 0;
     padding: 0;
