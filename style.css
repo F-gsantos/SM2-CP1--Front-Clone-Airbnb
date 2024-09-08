@@ -3,6 +3,55 @@
     padding: 0;
 }
 
+.o-q-deve-saber{
+    margin: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.observaçoes{
+    margin-top: 30px;
+    display: flex;
+}
+
+.observaçoes div{
+    width: 33.3%;
+    
+}
+
+.cancelamento{
+    margin-left: 90px;
+}
+
+.segurança{
+    margin-left: 90px;
+}
+
+
+.observaçoes li{
+    margin-top: 10px
+}
+
+.mostrar-mais{
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: #222;
+
+    font-size: 1rem;
+    text-decoration: underline;
+    
+}
+
+.mostrar-mais:hover{
+    color: black;
+
+
+}
+
+
 body {
     font-family: "Roboto";
     font-size: 16px;
