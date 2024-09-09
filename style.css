@@ -134,6 +134,194 @@ header {
   padding: 0;
 }
 
+.fale-conosco{
+    background-color: rgb(247, 243, 243);
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.infos{
+    display: flex;
+    border-top: 1px solid rgb(185, 185, 185);
+    height: 60px;
+    justify-content: space-between;
+
+}
+
+.txt-botton{
+    display: flex;
+
+}
+
+.txt-botton p{
+    margin-top: 21px;
+}
+
+.botoes-botton{
+    border: none;
+    background-color: rgb(247, 243, 243);
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+    
+    font-size: 14px;
+    display: flex;
+    margin-top: 21px;
+
+}
+
+.botoes-botton:hover{
+    text-decoration: underline;
+}
+
+.botoes-redes{
+    border: none;
+    background-color: rgb(247, 243, 243);
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.locais{
+    display: flex;
+    border-top: 1px solid rgb(185, 185, 185);
+    height:80px ;
+    border-bottom: 1px solid rgb(185, 185, 185);
+
+    
+}
+
+.localizaçoes{
+    display: flex;
+}
+.localizaçoes p{
+    margin-top: 31px;
+}
+.extra{
+    display: flex;
+    margin-top: 24px;
+    
+    justify-content: space-between;
+    margin-right: 80px;
+    margin-bottom: 24px;
+    
+
+}
+
+.icones-botton{
+    display: flex;
+}
+
+
+
+
+.atendimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+
+.hospedagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+
+}
+
+.airbnb-final{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+
+.botoes-final{
+    border: none;
+    background-color: rgb(247, 243, 243);
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+
+
+}
+
+.botoes-local{
+    border: none;
+    background-color: rgb(247, 243, 243);
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+    
+    font-size: 14px;
+
+
+}
+
+.botoes-local:hover{
+    text-decoration: underline;
+}
+
+.botoes-final:hover{
+    text-decoration: underline;
+}
+
+.o-q-deve-saber{
+    margin: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.observaçoes{
+    margin-top: 30px;
+    display: flex;
+}
+
+.observaçoes div{
+    width: 33.3%;
+    
+}
+
+.cancelamento{
+    margin-left: 90px;
+}
+
+.segurança{
+    margin-left: 90px;
+}
+
+
+.observaçoes p{
+    margin-top: 10px
+}
+
+.mostrar-mais{
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: #222;
+
+    font-size: 1rem;
+    text-decoration: underline;
+    
+}
+
+.mostrar-mais:hover{
+    color: black;
+
+
+}
+
+
 body {
   font-family: "Roboto";
   font-size: 16px;
