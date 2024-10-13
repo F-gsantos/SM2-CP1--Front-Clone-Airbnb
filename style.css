@@ -136,6 +136,9 @@ header {
 
 .fale-conosco {
   background-color: rgb(247, 243, 243);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   font-size: 14px;
   margin-bottom: 8px;
@@ -195,11 +198,9 @@ header {
 }
 .extra {
   display: flex;
-  margin-top: 24px;
-
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-right: 80px;
-  margin-bottom: 24px;
+  padding: 24px;
 }
 
 .icones-botton {
@@ -311,7 +312,7 @@ body {
 section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
 }
 .box-title {
   display: flex;
@@ -961,4 +962,197 @@ hr {
 }
 .ReceberCol p {
   font-size: 16px;
+}
+.comments-desktop{
+  display: flex;
+  flex-direction: column;
+}
+.mobile-comments{
+  display: none;
+}
+
+@media (max-width: 743px) {
+  .images-grid, .comments-desktop{
+    display: none;
+  }
+  .mapa{
+    padding: 24px 0px;
+  }
+  .mapa p{
+    margin: 0px;
+  }
+  .mapa iframe{
+    height: 218px;
+  }
+  .mobile-calendar{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+  }
+  .mobile-calendar h2{
+    margin-bottom: 8px;
+  }
+  .mobile-calendar img{
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+  }
+  .comments-title h1{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+  }
+  .comments-title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .mobile-comments{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cards-comments{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+  }
+  .card-comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    margin: 24px 8px;
+    border-radius: 12px;
+    width: 591px;
+    height: 260px;
+  }
+  .container{
+    width: fit-content;
+    padding: 0px 24px;
+  }
+  .Receber{
+    padding: 32px 0px 24px;
+  }
+  .CardReceber{
+    max-width: 380px;
+  }
+  .ReceberRow{
+    flex-direction: column;
+    gap: 32px;
+  }
+  .ReceberDesc p{
+    margin: 0px;
+  }
+  .ReceberDesc{
+    gap: 16px;
+  }
+  .cancelamento{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+  .cancelamento button{
+    text-decoration: none;
+    padding-left: 8px;
+  }
+  .cancelamento .mostrar-mais{
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .cancelamento span{
+    display: none;
+  }
+  .cancelamento div{
+    border: 0px solid #000 !important;
+    padding: 0px !important;
+    display: flex;
+  }
+  .o-q-deve-saber h2{
+    display: none;
+  }
+  .o-q-deve-saber{
+    padding: 0;
+    width: 100%;
+  }
+  .observaçoes{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 24px;
+    margin: 0px;
+  }
+  .observaçoes div{
+    padding: 24px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+  }
+  .observaçoes .regras-casa{
+    border-bottom: 0px solid rgb(185, 185, 185);
+  }
+  .observaçoes div button{
+    font-weight: bold;
+  }
+  .locais{
+    padding-left: 24px;
+  }
+  .extra {
+    flex-direction: column;
+  }
+  .extra div:first-child{
+    padding: 0px 0px 24px 0px;
+  }
+  .extra div{
+    padding: 24px 0px 24px 0px;
+    border-bottom: rgb(185, 185, 185) 1px solid;
+  }
+  .extra div:last-child{
+    border-bottom: #000 0px solid;
+  }
+  .botoes-redes{
+    display: none;
+  }
+  .botoes-botton{
+    margin: 0px;
+    height: fit-content;
+  }
+  .txt-botton{
+    display: flex;
+    flex-direction: column;
+  }
+  .txt-botton p{
+    margin: 0px;
+  }
+  .infos{
+    height: auto;
+    padding: 24px;
+    margin: 0px;
+    flex-direction: column-reverse;
+  }
+  .txt-botton ul{
+    margin-top: 4px;
+    display: flex;
+  }
+  .txt-botton span{
+    display: none;
+  }
+  .icones-botton{
+    margin-bottom: 22px;
+    gap: 24px;
+  }
+  .icones-botton .botoes-botton{
+    font-weight: bold;
+  }
+  .botoes-botton svg{
+    margin-right: 8px;
+  }
+  section{
+    align-items: flex-start;
+  }
 }
