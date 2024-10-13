@@ -312,7 +312,7 @@ body {
 section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
 }
 .box-title {
   display: flex;
@@ -1010,7 +1010,7 @@ hr {
   }
   .mobile-comments{
     max-width: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
   }
   .cards-comments{
@@ -1151,5 +1151,8 @@ hr {
   }
   .botoes-botton svg{
     margin-right: 8px;
+  }
+  section{
+    align-items: flex-start;
   }
 }
