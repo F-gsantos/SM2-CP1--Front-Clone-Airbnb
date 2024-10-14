@@ -5,6 +5,7 @@ header {
 * {
   font-family: "Roboto", sans-serif;
   color: #222222;
+  box-sizing: border-box;
 }
 .container-header {
   display: flex;
@@ -312,7 +313,7 @@ body {
 section {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 .box-title {
   display: flex;
@@ -365,21 +366,21 @@ section {
   grid-row: 1 / 3;
   grid-column: 1 / 3;
 }
-.comments-status{
-    display: flex;
+.comments-status {
+  display: flex;
 }
-.comments-status div{
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid #b0b0b0;
-    align-items: center;
-    padding: 24px;
+.comments-status div {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #b0b0b0;
+  align-items: center;
+  padding: 24px;
 }
-.comments-status div:last-child{
-    border: none;
+.comments-status div:last-child {
+  border: none;
 }
 
-.comments-status img{
+.comments-status img {
   width: 24px;
 }
 .img-acomodacao1 img {
@@ -850,30 +851,30 @@ section {
   padding-bottom: 64px;
   border-bottom: 1px solid #b0b0b0;
 }
-.Receber h2{
-    margin-bottom: 24px;
+.Receber h2 {
+  margin-bottom: 24px;
 }
-.ReceberCol button{
-    border-radius: 8px;
-    background-color: #222222;
-    color: #f0f0f0;
-    height: 48px;
-    border: none;
-    cursor: pointer;
-    max-width: 448px;
-    font-weight: bold;
-    font-size: 16px;
+.ReceberCol button {
+  border-radius: 8px;
+  background-color: #222222;
+  color: #f0f0f0;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  max-width: 448px;
+  font-weight: bold;
+  font-size: 16px;
 }
 .ReceberCol {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.bb{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-bottom: 32px;
+.bb {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 32px;
   border-bottom: 1px solid #b0b0b0;
 }
 .ReceberDesc {
@@ -909,17 +910,18 @@ section {
   font-weight: 500;
 }
 
-h1, p {
+h1,
+p {
   margin-bottom: 10px;
 }
-.proteger{
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.proteger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.proteger img{
-    width: 24px;
-    height: 24px;
+.proteger img {
+  width: 24px;
+  height: 24px;
 }
 
 .button-container {
@@ -963,63 +965,74 @@ hr {
 .ReceberCol p {
   font-size: 16px;
 }
-.comments-desktop{
+.comments-desktop {
   display: flex;
   flex-direction: column;
 }
-.mobile-comments{
+
+.mobile-comments {
   display: none;
 }
-
+.img-breakpoint{
+  display: none;
+}
+.titulo-brekpoint{
+  display: none;
+}
 @media (max-width: 743px) {
-  .images-grid, .comments-desktop{
+  .titulo-brekpoint{
+    display: flex;
+  }
+  .comments-desktop {
     display: none;
   }
-  .mapa{
+  .mapa {
     padding: 24px 0px;
   }
-  .mapa p{
+  .mapa p {
     margin: 0px;
   }
-  .mapa iframe{
+  .mapa iframe {
     height: 218px;
   }
-  .mobile-calendar{
+  .mobile-calendar {
     display: flex;
     flex-direction: column;
     padding: 24px 0px;
     border-bottom: 1px solid rgb(185, 185, 185);
   }
-  .mobile-calendar h2{
+  .mobile-calendar h2 {
     margin-bottom: 8px;
   }
-  .mobile-calendar img{
+  .mobile-calendar img {
     width: fit-content;
     height: fit-content;
     align-self: center;
   }
-  .comments-title h1{
+  .comments-title h1 {
     display: flex;
     align-items: center;
     margin: 0px;
   }
-  .comments-title{
+  .comments-title {
     display: flex;
     align-items: center;
     gap: 8px;
   }
-  .mobile-comments{
+  .mobile-comments {
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+
   }
-  .cards-comments{
+  .cards-comments {
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
+    width: fit-content;
     overflow: hidden;
   }
-  .card-comments{
+  .card-comments {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1030,61 +1043,61 @@ hr {
     width: 591px;
     height: 260px;
   }
-  .container{
+  .container {
     width: fit-content;
     padding: 0px 24px;
   }
-  .Receber{
+  .Receber {
     padding: 32px 0px 24px;
   }
-  .CardReceber{
+  .CardReceber {
     max-width: 380px;
   }
-  .ReceberRow{
+  .ReceberRow {
     flex-direction: column;
     gap: 32px;
   }
-  .ReceberDesc p{
+  .ReceberDesc p {
     margin: 0px;
   }
-  .ReceberDesc{
+  .ReceberDesc {
     gap: 16px;
   }
-  .cancelamento{
+  .cancelamento {
     display: flex;
     flex-direction: row !important;
     align-items: center !important;
   }
-  .cancelamento button{
+  .cancelamento button {
     text-decoration: none;
     padding-left: 8px;
   }
-  .cancelamento .mostrar-mais{
+  .cancelamento .mostrar-mais {
     font-size: 24px;
     font-weight: normal;
   }
-  .cancelamento span{
+  .cancelamento span {
     display: none;
   }
-  .cancelamento div{
+  .cancelamento div {
     border: 0px solid #000 !important;
     padding: 0px !important;
     display: flex;
   }
-  .o-q-deve-saber h2{
+  .o-q-deve-saber h2 {
     display: none;
   }
-  .o-q-deve-saber{
+  .o-q-deve-saber {
     padding: 0;
     width: 100%;
   }
-  .observaçoes{
+  .observaçoes {
     display: flex;
     flex-direction: column-reverse;
     padding: 0px 24px;
     margin: 0px;
   }
-  .observaçoes div{
+  .observaçoes div {
     padding: 24px 0px;
     width: 100%;
     display: flex;
@@ -1093,66 +1106,194 @@ hr {
     margin: 0px;
     border-bottom: 1px solid rgb(185, 185, 185);
   }
-  .observaçoes .regras-casa{
+  .observaçoes .regras-casa {
     border-bottom: 0px solid rgb(185, 185, 185);
   }
-  .observaçoes div button{
+  .observaçoes div button {
     font-weight: bold;
   }
-  .locais{
+  .locais {
     padding-left: 24px;
   }
   .extra {
     flex-direction: column;
   }
-  .extra div:first-child{
+  .extra div:first-child {
     padding: 0px 0px 24px 0px;
   }
-  .extra div{
+  .extra div {
     padding: 24px 0px 24px 0px;
     border-bottom: rgb(185, 185, 185) 1px solid;
   }
-  .extra div:last-child{
+  .extra div:last-child {
     border-bottom: #000 0px solid;
   }
-  .botoes-redes{
+  .botoes-redes {
     display: none;
   }
-  .botoes-botton{
+  .botoes-botton {
     margin: 0px;
     height: fit-content;
   }
-  .txt-botton{
+  .txt-botton {
     display: flex;
     flex-direction: column;
   }
-  .txt-botton p{
+  .txt-botton p {
     margin: 0px;
   }
-  .infos{
+  .infos {
     height: auto;
     padding: 24px;
     margin: 0px;
     flex-direction: column-reverse;
   }
-  .txt-botton ul{
+  .txt-botton ul {
     margin-top: 4px;
     display: flex;
   }
-  .txt-botton span{
+  .txt-botton span {
     display: none;
   }
-  .icones-botton{
+  .icones-botton {
     margin-bottom: 22px;
     gap: 24px;
   }
-  .icones-botton .botoes-botton{
+  .icones-botton .botoes-botton {
     font-weight: bold;
   }
-  .botoes-botton svg{
+  .botoes-botton svg {
     margin-right: 8px;
   }
-  section{
+  section {
     align-items: flex-start;
+  }
+  .grid-breakpoint {
+    display: flex;
+    width: 100%;
+  }
+  .titulo-brekpoint {
+    display: none;
+  }
+  .popup-breakpoint {
+    display: none;
+  }
+  .comments-container-bp {
+    display: none;
+  }
+  .img-breakpoint{
+    display: flex;
+  }
+  .calendar{
+    display: none;
+  }
+  .container-header{
+      display: none;
+  }
+  .images-grid{
+      display: none;
+  }
+  .grid-breakpoint img{
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      aspect-ratio: 1;
+      margin-top: 30px;
+
+      overflow: hidden;
+  }
+  .container{
+      width: 100%;
+  }
+  .titulo-pagina{
+      display: none;
+  }
+  .container-links{
+      padding: 0 24;
+      width: 100%;
+      justify-content: flex-end;
+  }
+  .rDesc{
+      display: none;
+  }
+  .Desc{
+      width: 100%;
+  }
+  .share-save{
+      display: none;
+  }
+  .popup-breakpoint{
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      width: 100%;
+      height: 100px;
+      align-items: center;
+      border-top: solid;
+      border-color: #b0b0b0;
+      border-width: 1px;
+      
+  }
+  .popup-breakpoint h3{
+      text-decoration: underline;
+      margin-bottom: 5px
+  }
+  .reserva{
+      background-color: #ff385c;
+      border: none;
+      color: #fff;
+      border-radius: 10px;
+      width: 150px;
+      font-size: medium;
+      height: 50px;
+      
+  }
+  .comments-container{
+      display: none;
+  }
+  .estrelas img{
+      height: 10px;
+      width: 10px;
+  }
+  .estrelas{
+      display: flex;
+      flex-direction: row;
+  }
+  .foto-mark{
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+  }
+  .infos-mark{
+      display: flex;
+      gap: 5px;
+     
+  }
+  .card-comments-bp{
+      
+      margin: 40px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px #b0b0b0;
+  }
+}
+@media (min-width: 744px){
+  .grid-breakpoint{
+      display: none;
+  }
+  .titulo-brekpoint{
+      display: none;
+  }
+  .popup-breakpoint{
+      display: none;
+  }
+  .comments-container-bp{
+      display: none;
   }
 }
